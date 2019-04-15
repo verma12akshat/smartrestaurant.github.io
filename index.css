@@ -1,0 +1,63 @@
+*,*::after,*::before
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    background: url('https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    color:white;
+    height:100vh;
+    width: 100%;
+    overflow:hidden;
+}
+
+.container .SubContainer
+{
+    background: rgba(1,1,1,0.8);
+    z-index: 100;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading
+{
+    font-family: fantasy;
+    font-size: 3.1vmax;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-top:10px;
+}
+
+.btn
+{
+    padding: 0.5em 0 0.5em 0;
+    background: linear-gradient(180deg,#ff5e01,#f1ca81);
+    width:8em;
+    border-radius: 30em;
+    text-align: center;
+    cursor: pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    transform: scale(0.8,0.8);
+    transition: transform cubic-bezier(0.39, 0.575, 0.565, 1) 0.44s;
+}
+.btn a{
+text-decoration:none;
+color: inherit;
+
+}
+.btn:hover
+{
+    transform: scale(1,1);
+    transition: transform cubic-bezier(0.39, 0.575, 0.565, 1) 0.44s;
+}
